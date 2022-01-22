@@ -31,6 +31,7 @@ function App() {
   const [card1, setCard1] = useState(null);
   const [card2, setCard2] = useState(null);
   const [win, setWin] = useState(false);
+  const [freeze, setFreeze] = useState(false);
 
   useEffect(() => {
     shuffleCards();
@@ -61,6 +62,7 @@ function App() {
         console.log(endGame);
         console.log(cards);
         setWin(true);
+        setFreeze(true);
       }
     }
   }, [cards]);
@@ -86,14 +88,17 @@ function App() {
     setCard2(null);
     setTurns(0);
     setWin(false);
+    setFreeze(false);
   };
 
   const onClick = (card) => {
-    if (!card1 && !card2) {
-      setCard1(card);
-    }
-    if (card1 && card1 !== card && !card2) {
-      setCard2(card);
+    if (!freeze) {
+      if (!card1 && !card2) {
+        setCard1(card);
+      }
+      if (card1 && card1 !== card && !card2) {
+        setCard2(card);
+      }
     }
   };
 
