@@ -9,22 +9,18 @@
 }
 
 html {
-  box-sizing: border-box;
   scroll-behavior: smooth;
-  height: 100vh;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
-  background-image: linear-gradient(
-    45deg,
-    hsla(270, 94%, 25%, 1) 11%,
-    hsla(158, 94%, 49%, 1) 91%
-  );
+  background-image: linear-gradient(to top, #40047c, #07f29c);
   background-repeat: no-repeat;
   background-size: cover;
+
   color: #ffeeee;
 }
 

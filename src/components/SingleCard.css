@@ -1,10 +1,13 @@
 .card {
   position: relative;
-  max-width: 8em;
-  max-height: 8em;
-  min-width: 2em;
+  padding: 0.2rem;
+  width: 100%;
+  /* max-width: 6em; */
+  max-height: 6em;
+  /* min-width: 2em; */
   min-height: 2em;
   aspect-ratio: 1/1;
+  align-self: stretch;
 }
 
 .card img {
