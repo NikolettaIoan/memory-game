@@ -20,7 +20,7 @@ body {
   background-image: linear-gradient(to top, #40047c, #07f29c);
   background-repeat: no-repeat;
   background-size: cover;
-
+  overflow: hidden;
   color: #ffeeee;
 }
 
